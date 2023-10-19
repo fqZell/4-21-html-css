@@ -17,7 +17,7 @@ body {
 
     margin-top: 50px;
 
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 input, button {
@@ -65,6 +65,7 @@ a {
     font-weight: 900;
     line-height: normal;
     letter-spacing: 1.2px;
+    cursor: pointer;
 }
 
 .header nav {
@@ -83,6 +84,12 @@ a {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.22px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.header nav a:hover {
+    color: #E5C643;
 }
 
 .header nav button {
@@ -90,10 +97,10 @@ a {
 
     outline: none;
     border: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     cursor: pointer;
 
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
 
     color: #FEFEFE;
     font-size: 24px;
@@ -105,7 +112,11 @@ a {
 }
 
 .header nav button:hover {
-    background-color: #000000da;
+    background-color: #E5C643;
+}
+
+.header nav .burger-menu {
+    display: none;
 }
 
 /* header css */
@@ -197,7 +208,7 @@ a {
     outline: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     color: #FFF;
     font-size: 30px;
@@ -208,7 +219,7 @@ a {
 }
 
 .banner .banner-btn button:hover {
-    background-color: #000000d8;
+    background-color: #E5C643;
 }
 
 .banner .banner-photo img{
@@ -232,7 +243,7 @@ a {
 
     background-color: #fff;
 
-    margin-top: 63px;
+    margin-top: 100px;
 }
 
 /* partners css */
@@ -240,7 +251,7 @@ a {
 /* newProduct css */
 
 .news {
-    margin-top: 63px;
+    margin-top: 100px;
 }
 
 .title {
@@ -299,6 +310,12 @@ a {
     font-weight: 500;
     line-height: 25px; /* 156.25% */
     letter-spacing: -1.28px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.product-info .product-text .name:hover {
+    color: #E5C643;
 }
 
 .product-info .product-text .collection {
@@ -308,6 +325,16 @@ a {
     font-weight: 500;
     line-height: 25px; /* 208.333% */
     letter-spacing: -0.96px;
+}
+
+.product-info .fa-arrow-right-long {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.product-info .fa-arrow-right-long:hover {
+    margin-right: -10px;
 }
 
 /* newProduct css */
@@ -396,7 +423,7 @@ a {
     outline: none;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     border-radius: 8px;
 
     background-color: #000;
@@ -409,6 +436,10 @@ a {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.558px;
+}
+
+.promotion-info button:hover {
+    background-color: #E5C643;
 }
 
 /* promotion css */
@@ -489,11 +520,355 @@ a {
 .application-info .photos img {
     width: 100%;
     object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
-.application-photo img {
-    width: 100%;
-    object-fit: cover;
+.application-info .photos img:hover {
+    transform: translateY(-20px);
 }
 
 /* application css */
+
+/* subscription css */
+
+.subscription {
+    width: 100%;
+
+    background-color: #E5C643;
+
+    margin-top: 200px;
+}
+
+.subscription-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+
+    padding: 120px;
+}
+
+.subscription-title {
+    color: #FFF;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px; /* 127.273% */
+    letter-spacing: 1.65px;
+}
+
+.subscription-subtitle {
+    color: #FFFCF8;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 109.375% */
+    letter-spacing: 0.96px;
+}
+
+.subscription-input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.subscription-input input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    
+    color: #767676;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 145.833% */
+    letter-spacing: 0.72px;
+}
+
+.subscription-input button {
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px; /* 106.061% */
+    letter-spacing: 0.99px;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.subscription-input button:hover {
+    background-color: #E5C643;
+}
+
+/* subscription css */
+
+/* footer css */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: #000;
+    padding: 100px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.footer-info h1 {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-info h1:hover {
+    color: #E5C643;
+}
+
+.footer-info p {
+    color: #8E8E8E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 166.667% */
+    letter-spacing: 0.48px;
+}
+
+.icons-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.icons-social img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.icons-social img:hover {
+    transform: translateY(-20px);
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.footer-nav li {
+    color: #8E8E8E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 166.667% */
+    letter-spacing: 0.48px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-nav li:hover {
+    color: #E5C643;
+}
+
+/* footer css */
+
+/* media  */
+@media (max-width: 1700px) {
+    .header {
+        padding: 0 50px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .title img {
+        display: none;
+    }
+
+    .new-products {
+        gap: 40px;
+    }
+
+    .promotion {
+        justify-content: center;
+    }
+
+    .promotion .promotion-info {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .promotion-info .text-stocks{
+        text-align: center;
+    }
+
+    .favourite-product {
+        justify-content: center;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer-info {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .partners img:last-child {
+        display: none;
+    }
+
+    .new-products .product:last-child {
+        display: none;
+    }
+
+    .banner {
+        padding-bottom: 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header nav a {
+        display: none;
+    }
+
+    .header nav button {
+        display: none;
+    }
+
+    .header nav .burger-menu {
+        display: block;
+        font-size: 32px;
+    }
+
+    .partners img:nth-last-child(-n + 3) {
+        display: none;
+    }
+
+    .application {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-wrap: wrap;
+    }
+
+    .footer-nav {
+        gap: 64px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        gap: 24px;
+    }
+
+    .banner {
+        padding: 48px;
+    }
+    
+    .banner .banner-title h2 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .banner .banner-btn {
+        flex-wrap: wrap;
+    }
+
+    .promotion {
+        padding: 24px;
+    }
+
+    .promotion-info .text-stocks {
+        width: 350px;
+        font-size: 24px;
+    }
+
+    .promotion-info .text-date {
+        font-size: 20px;
+    }
+
+    .promotion .promotion-info h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .product img {
+        width: 100%;
+    }
+
+    .application {
+        gap: 48px;
+    }
+
+    .application-photo img {
+        width: 100%;
+    }
+
+    .subscription {
+        padding: 0 48px;
+    }
+
+    .subscription-title {
+        font-size: 36px;
+        line-height: 35px;
+    }
+
+    .subscription-subtitle {
+        font-size: 24px;
+    }
+
+    .subscription-input {
+        gap: 24px;
+    }
+
+    .footer-nav {
+        justify-content: flex-start;
+    }
+}
+/* media  */
